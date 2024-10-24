@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans';
+}
+.head{
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: 2.4rem;
+}

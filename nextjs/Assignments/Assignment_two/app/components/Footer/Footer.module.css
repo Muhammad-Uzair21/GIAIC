@@ -1,0 +1,41 @@
+.footer{
+    font-family: 'Lucida Sans';
+    margin: 0;
+    padding: 0;
+    /* height: 15vh;
+    width: 100%; */
+    background-color: var(--body-color);
+    color: var(--light-color);
+    border-top: 3px solid var(--head-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.columns{
+  flex: 1; 
+  min-width: 200px;
+}
+.columns h3{
+    color: var(--main-color);
+}
+.columns2 h1{
+    color: var(--main-color);
+}
+.columns2{
+    text-align: center;
+    flex: 1; 
+    min-width: 190px;
+}
+.bottom{
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.contain{
+    width: 50%;
+    padding: 20px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans';
+}
+.about{
+    font-weight: bolder;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+.stuff{
+    color: var(--main-color);
+    font-weight: 700;
+}
+.paras{
+    color: var(--light-color);
+}
+.list{
+    color: var(--light-color);
+    font-size: 1rem;
+}

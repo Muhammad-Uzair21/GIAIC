@@ -1,0 +1,20 @@
+
+.cont {
+    background-color: var(--head-color);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.main {
+    font-family: 'Lucida Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    color: var(--main-color);
+}
+.para{
+    color: var(--light-color);
+}
