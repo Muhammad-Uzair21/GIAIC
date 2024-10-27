@@ -1,13 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import Image, {StaticImageData} from "next/image";
-import { SliderData } from "./SliderData";
+import Image from "next/image";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
-interface slidesprop{
-  slides:StaticImageData[]
+interface Slide {
+  image: string;
 }
-const Slider:React.FC<slidesprop> = ({ slides }) => {
+
+interface SlidesProp {
+  slides: Slide[];
+}
+
+const Slider: React.FC<SlidesProp> = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -24,14 +28,14 @@ const Slider:React.FC<slidesprop> = ({ slides }) => {
   }
 
   return (
-    <div id="Gallery" className="relative overflow-hidden max-w-[1240px] mx-auto h-[500]"> {/* Adjust height as needed */}
+    <div id="Gallery" className="relative overflow-hidden max-w-[1240px] mx-auto h-[500px]">
       <h2 className="text-center text-2xl font-bold">Gallery</h2>
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
-        {SliderData.map((slide, index) => (
+        {slides.map((slide, index) => (
           <div 
             key={index} 
             className={`min-w-full transition-opacity duration-1000 ${index === current ? 'opacity-100' : 'opacity-0'}`}
-            style={{ height: '80vh' }} // Ensure each slide has the same height
+            style={{ height: '80vh' }}
           >
             <div className="relative h-full p-4 flex justify-center">
               <FaCircleArrowLeft 
