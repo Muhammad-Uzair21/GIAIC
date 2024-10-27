@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import { SliderData } from "./SliderData";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
-const Slider = ({ slides }) => {
+interface slidesprop{
+  slides:StaticImageData[]
+}
+const Slider:React.FC<slidesprop> = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
