@@ -28,7 +28,7 @@ const Slider: React.FC<SlidesProp> = ({ slides }) => {
   }
 
   return (
-    <div id="Gallery" className="relative overflow-hidden max-w-[1240px] mx-auto h-[500px]">
+    <div id="Gallery" className="relative overflow-hidden max-w-[1240px] mx-auto h-[500]">
       <h2 className="text-center text-2xl font-bold">Gallery</h2>
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
         {slides.map((slide, index) => (

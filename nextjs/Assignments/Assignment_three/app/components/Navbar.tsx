@@ -64,6 +64,9 @@ const Navbar = () => {
               <Link href="/#Gallery">Gallery</Link>
             </li>
             <li onClick={handlnav} className="p-5 text-4xl hover:text-gray-500">
+              <Link href="/#insta">Instagram</Link>
+            </li>
+            <li onClick={handlnav} className="p-5 text-4xl hover:text-gray-500">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
