@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from './Searchbar'
-import { BiCartAlt, BiHeart, BiUser, BiUserPlus, BiUserX } from 'react-icons/bi'
+import { BiCartAlt, BiHeart, BiUser } from 'react-icons/bi'
 import { FaBars } from 'react-icons/fa'
 
 const Header = () => {
